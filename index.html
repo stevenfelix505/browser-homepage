@@ -28,7 +28,7 @@ function showButton()
 function hideButton()
 {var a=document.getElementById("search_input").value;""==a&&(document.getElementById("search_submit").style.display="none")}
 function search()
-{var a=document.getElementById("search_input").value;return""!=a&&(window.open(a),document.getElementById("search_input").value=""),!1}
+{var a=document.getElementById("search_input").value;return""!=a&&(location.replace(a),document.getElementById("search_input").value=""),!1}
 </script>
 </div>
 </body>
