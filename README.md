@@ -1,3 +1,5 @@
+[![Stars Badge](https://img.shields.io/github/stars/stevenfelix505/browser-homepage.svg?style=flat&label=Stars)](https://github.com/stevenfelix505/browser-homepage)
+
 # [Browser Homepage](https://stevenfelix505.github.io/browser-homepage)
 Internet Browser homepage.
 
