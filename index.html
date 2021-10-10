@@ -18,7 +18,7 @@
 <button onclick="search()" id="search_submit" value="" aria-label="Forward">
 <div class="search icon"></div></button>
 <span>
-<input class="search" onfocus="showButton()" onblur="hideButton()" type="text" value="" autocomplete="off" id="search_input" title="Cari">
+<input class="search" onfocus="showButton()" onblur="hideButton()" type="text" value="" autocomplete="off" id="search_input" title="Search">
 </span>
 </form>
 </div>
@@ -29,6 +29,9 @@ function hideButton()
 {var a=document.getElementById("search_input").value;""==a&&(document.getElementById("search_submit").style.display="none")}
 function search()
 {var a=document.getElementById("search_input").value;return""!=a&&(window.open(a,"_top"),document.getElementById("search_input").value=""),!1}
+function Gsearch(query){
+window.open="https://www.google.com/search?q="+query,"_top";
+}
 </script>
 </div>
 </body>
