@@ -24,13 +24,15 @@
 </div>
 <script type="text/javascript">
 function showButton()
-{document.getElementById("search_submit").style.display="block"}
+    {document.getElementById("search_submit").style.display="block"}
 function hideButton()
-{var a=document.getElementById("search_input").value;""==a&&(document.getElementById("search_submit").style.display="none")}
-function search()
-{var a=document.getElementById("search_input").value;return""!=a&&(window.open(a,"_top"),document.getElementById("search_input").value=""),!1}
-function Gsearch(query){
-window.open="https://www.google.com/search?q="+query,"_top";
+    {var a=document.getElementById("search_input").value;""==a&&(document.getElementById("search_submit").style.display="none")}
+function search() {
+    if (document.getElementById("search_input").value != "") {
+        window.open = "${BASE_URL}" + document.getElementById("search_input").value;
+        document.getElementById("search_input").value = "";
+    }
+    return false;
 }
 </script>
 </div>
